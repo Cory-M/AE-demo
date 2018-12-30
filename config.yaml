@@ -1,0 +1,20 @@
+ckpt:
+    save_freq: 5
+    save_path: checkpoint/bn_ae
+    print_freq: 20
+    save_img: True
+    ckpt_freq: 300
+model:
+    hidden_size: 20
+    intermediate_size: 128 
+
+common:
+    arch: VAE
+    batch_size: 128
+    max_iter: 160000
+    bn_group: 1
+    train_root: XXXXX
+    train_source: XXXXX
+    val_root: XXXXX
+    val_source: XXXXX
+    workers: 1
